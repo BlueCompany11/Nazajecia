@@ -10,6 +10,11 @@ namespace Nazajecia
     {
         static void Main(string[] args)
         {
+            Mezczyzna men = new Mezczyzna("Adolf Hitler", 33, false);
+            Kobieta wom = new Kobieta("Ewa Braun", 30, false);
+            wom.Marriage(men);
+            Console.WriteLine(men.ToString());
+            Console.ReadKey();
         }
     }
 }
